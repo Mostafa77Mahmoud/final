@@ -1,0 +1,123 @@
+> Please help me refactor my React Native (Expo) app to be fully compatible with EAS Production builds using the Managed Workflow.
+
+
+---
+
+🛠 Current Build Problems:
+
+I'm using these native libraries:
+
+react-native-html-to-pdf
+
+@react-native-async-storage/async-storage
+
+react-native-reanimated
+
+react-native-gesture-handler
+
+react-native-safe-area-context
+
+react-native-screens
+
+react-native-svg
+
+
+These are causing errors during EAS Production build (no matching variant / Gradle build failed).
+
+
+---
+
+🎯 Your Task:
+
+✅ Carefully go through every file in the project and:
+
+1. Find and update all code that imports or uses any of the above libraries.
+
+
+2. Replace them with Expo-compatible alternatives, or remove them entirely if unused.
+
+
+3. Preserve all existing app functionality, logic, and features exactly as-is.
+
+
+4. Ensure compatibility with EAS Production build using npx expo prebuild and eas build.
+
+
+
+
+---
+
+🔁 Specific Refactor Instructions:
+
+🔹 react-native-html-to-pdf
+
+Replace with expo-print + expo-sharing
+
+Maintain current logic of generating a PDF from HTML or images, saving locally, and opening/sharing it.
+
+
+🔹 @react-native-async-storage/async-storage
+
+Replace with expo-secure-store or other Expo-supported local storage.
+
+Migrate all getItem, setItem, etc. usages.
+
+
+🔹 UI-related native modules:
+
+react-native-reanimated, react-native-gesture-handler, react-native-screens, react-native-safe-area-context, react-native-svg
+
+If not absolutely necessary, remove completely.
+
+If required (e.g., navigation), replace with Expo-compatible components (e.g., @react-navigation/native, react-native-svg-transformer, etc.).
+
+
+
+---
+
+🧠 Key Requirements:
+
+No native code or native module dependencies should remain.
+
+App must work exactly the same on UI and functionality level.
+
+App supports Dark Mode, Multi-language (Arabic/English), and PDF generation — all features must still work.
+
+
+
+---
+
+⚙️ After Refactoring:
+
+I will:
+
+1. Delete the entire /android folder
+
+
+2. Run: npx expo prebuild --clean --platform android
+
+
+3. Run: npx eas build --platform android --profile production
+
+
+
+So make sure the code is 100% production-ready, no native modules.
+
+
+---
+
+📦 Optimize Build Size:
+
+Also, generate an optimized .easignore file that:
+
+Excludes node_modules/**, except for necessary JS dependencies
+
+Excludes test files, .git, .vscode, .expo, etc.
+
+Reduces archive size to improve build upload speed
+
+
+
+---
+
+🔥 Thank you! This is urgent for my production build — please ensure everything is stable and complete.

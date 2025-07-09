@@ -1,0 +1,44 @@
+Please review and fully implement the following enhancements and fixes to guarantee a seamless and professional user experience, especially on **mobile devices** (EAS builds and Expo Go). The goal is to make the entire flow **flawless, powerful, and bug-free**.
+
+1. **Camera → PDF → Upload → Analyze Flow (Mobile Priority):**
+   - After capturing 1 or more images from the camera, the app should **automatically convert them to a single PDF**.
+   - Once the PDF is created, automatically **navigate to the Upload screen** showing the PDF file details (name, size, optional preview).
+   - Show a clearly labeled **"Analyze"** button to trigger document analysis immediately.
+   - This full flow should **require no manual steps** in between.
+   - The flow must be **perfect and reliable on mobile (first)** and also work well on web.
+
+2. **Analyze Button:**
+   - Ensure it functions correctly.
+   - Fix any errors like `onUpload` or `onAnalyze is not a function`.
+
+3. **Dark Mode / Light Mode:**
+   - Ensure **perfect theme toggling** across all screens and components.
+   - Must work properly on both web and mobile, using system theme where possible.
+   - Make buttons, icons, backgrounds, and text adapt clearly in both modes.
+
+4. **Language Switching (Arabic/English):**
+   - Must toggle flawlessly.
+   - On mobile, use I18nManager to flip RTL layout.
+   - On web, set `document.dir` accordingly.
+   - Ensure all screens update direction and labels dynamically.
+   - Fix any reversed or broken Arabic rendering on web (best-effort).
+
+5. **Buttons and Navigation:**
+   - Ensure all buttons and icons are **professional**, **polished**, and have proper feedback.
+   - Fix navigation errors like `onNavigate is not a function`.
+   - Add animation/scale feedback where needed.
+
+6. **Contract History (Storage):**
+   - Make sure all generated PDFs or analyzed contracts are **saved locally** and appear in the **History** screen.
+   - Use `SecureStore` (mobile) or `localStorage` (web) with fallback logic.
+   - Ensure no loss of files on app reload.
+
+7. **Enhance UI/UX Overall:**
+   - Add optional **Download PDF** on web after generation.
+   - Add **Toast notifications** on success/error.
+   - Use consistent shadows, spacing, icons, and typography for modern design.
+   - Use smooth transitions and gradient buttons where appropriate.
+
+🟢 Ensure **ALL of the above works flawlessly and powerfully on mobile first**, with fallback compatibility on web.
+
+NO broken logic. NO missing translations. NO incomplete flow. Just full professional-grade app behavior.

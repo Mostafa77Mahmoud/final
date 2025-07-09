@@ -1,0 +1,36 @@
+Session history fetch failed: 
+DOMException {}
+stack: "AbortError: signal is aborted without reason↵ at https://6ba2610e-367a-49e6-bc84-c4341a5862d7-00-dkgi03knz4x1.worf.replit.dev/node_modules/expo/AppEntry.bundle?platform=web&dev=true&hot=false&lazy=true&transform.engine=hermes&transform.routerRoot=app&unstable_transformProfile=hermes-stable:28877:53"
+get stack: ƒ ()
+set stack: ƒ ()
+[[Prototype]]: DOMException
+Request timeout - using local data only
+DOMException {}
+stack: "AbortError: signal is aborted without reason↵ at https://6ba2610e-367a-49e6-bc84-c4341a5862d7-00-dkgi03knz4x1.worf.replit.dev/node_modules/expo/AppEntry.bundle?platform=web&dev=true&hot=false&lazy=true&transform.engine=hermes&transform.routerRoot=app&unstable_transformProfile=hermes-stable:28877:53"
+get stack: ƒ ()
+set stack: ƒ ()
+[[Prototype]]: DOMException
+
+Page 1 captured successfully
+Page 2 captured successfully
+Starting document generation for 2 images
+Generating web document from 2 images
+Converting image 1 to base64
+Converting image 2 to base64
+All images converted to base64
+Created file: 
+Object {name: "contract_multipage_1752027608293.txt", size: 99062, type: "text/plain"}
+Document generation successful: 
+Object {uri: "blob:https://6ba2610e-367a-49e6-bc84-c4341a5862d7-00-dkgi03knz4x1.worf.replit.dev/f2c99b74-6c77-43a…", name: "contract_multipage_1752027608293.txt", type: "text/plain", size: 99062, hasFile: true, …}
+Session history fetch failed: 
+DOMException {}
+stack: "AbortError: signal is aborted without reason↵ at https://6ba2610e-367a-49e6-bc84-c4341a5862d7-00-dkgi03knz4x1.worf.replit.dev/node_modules/expo/AppEntry.bundle?platform=web&dev=true&hot=false&lazy=true&transform.engine=hermes&transform.routerRoot=app&unstable_transformProfile=hermes-stable:28877:53"
+get stack: ƒ ()
+set stack: ƒ ()
+[[Prototype]]: DOMException
+Request timeout - using local data only
+DOMException {}
+stack: "AbortError: signal is aborted without reason↵ at https://6ba2610e-367a-49e6-bc84-c4341a5862d7-00-dkgi03knz4x1.worf.replit.dev/node_modules/expo/AppEntry.bundle?platform=web&dev=true&hot=false&lazy=true&transform.engine=hermes&transform.routerRoot=app&unstable_transformProfile=hermes-stable:28877:53"
+get stack: ƒ ()
+set stack: ƒ ()
+[[Prototype]]: DOMException

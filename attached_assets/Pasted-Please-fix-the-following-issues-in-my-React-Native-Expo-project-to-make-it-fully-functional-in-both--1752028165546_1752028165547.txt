@@ -1,0 +1,47 @@
+Please fix the following issues in my React Native Expo project to make it fully functional in both development and production environments, especially for EAS builds targeting mobile:
+
+1. ⚠️ Arabic RTL Text Rendering:
+   - Ensure all Arabic text is displayed in the correct direction (Right-to-Left).
+   - Use `I18nManager.forceRTL(true)` where appropriate or apply `textAlign: 'right'` for Arabic strings.
+   - Make sure onboarding screens and all screens support RTL.
+
+2. ⚠️ Dark Mode Toggle:
+   - Fix the dark mode toggle not applying changes.
+   - Ensure that switching between themes works globally.
+   - Persist the selected theme (light/dark) using `expo-secure-store` or any storage solution.
+   - Ensure dark/light styles are applied dynamically across the app.
+
+3. ⚠️ Incomplete Translations:
+   - Check that all onboarding and UI texts are covered in the i18n translation files.
+   - Add fallback logic for missing translation keys.
+
+4. ⚠️ Camera to PDF Functionality:
+   - Refactor the code to only invoke `expo-print` and `expo-sharing` when running on a native platform.
+   - Detect the platform using `Platform.OS` and prevent PDF generation in `web` to avoid runtime errors.
+
+5. ⚠️ API Fetch Failure:
+   - Ensure that the fetch logic (e.g., in getStats, session history, etc.) gracefully handles failures and timeouts.
+   - Add fallback to local data when the server is unreachable, and show appropriate UI messages.
+   - Make sure the environment variable `API_URL` is available in `eas.json` and fetched correctly.
+
+6. ⚠️ Web Compatibility:
+   - Add platform checks using `Platform.OS !== 'web'` where native modules are used.
+   - Wrap native-only code in `if (Platform.OS !== 'web')` to prevent breaking on web.
+
+7. ✅ Bonus: Fix camera screen UI:
+   - When taking a photo, allow confirmation and then trigger PDF generation (native only).
+   - Show a success/failure message after PDF creation.
+
+Make sure not to remove any existing business logic or functionality. Maintain full feature parity, including:
+- Arabic/English i18n
+- RTL support
+- Dark mode toggle
+- Camera photo-to-PDF generation
+- Session history fetch from backend
+- Error handling when offline or on web
+
+After fixing, ensure the app runs correctly on:
+- Expo Go (mobile)
+- EAS Production build
+- Expo Web (fallback mode)
+
